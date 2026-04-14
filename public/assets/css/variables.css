@@ -1,0 +1,25 @@
+/* public/assets/css/variables.css */
+
+:root {
+    /* Brand Colors */
+    --tea-gold: #D4AF37;
+    --leaf-green: #6B8E23;
+    --leaf-green-hover: #557519;
+    --warm-brown: #4E342E;
+    
+    /* Neutral Colors */
+    --bg-light: #f8f8f8;
+    --bg-white: #ffffff;
+    --text-dark: #222222;
+    --text-muted: #555555;
+    --border-color: #e1e5e9;
+
+    /* Typography */
+    --font-primary: 'Poppins', sans-serif;
+    
+    /* Structural & Effects */
+    --nav-height: 80px;
+    --transition-speed: 0.3s;
+    --card-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    --card-shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,64 @@
+/* public/assets/css/cart.css */
+.cart-container { max-width: 1100px; margin: 0 auto; padding: 40px 15px; }
+
+.cart-header { 
+    background: linear-gradient(135deg, var(--leaf-green), #90C695);
+    color: white; padding: 30px; border-radius: 20px; margin-bottom: 30px;
+    text-align: center; box-shadow: 0 10px 40px rgba(107,142,35,0.3);
+}
+
+.cart-item {
+    background: white; border-radius: 16px; padding: 24px; 
+    margin-bottom: 16px; box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    display: flex; align-items: center; transition: all 0.3s ease;
+}
+.cart-item:hover { box-shadow: 0 15px 40px rgba(0,0,0,0.15); transform: translateY(-2px); }
+
+.cart-image { 
+    width: 100px; height: 100px; border-radius: 12px; 
+    object-fit: cover; margin-right: 24px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.cart-details { flex: 1; }
+.cart-name { font-size: 1.3rem; font-weight: 600; color: var(--warm-brown); margin-bottom: 8px; }
+.cart-price { font-size: 1.4rem; font-weight: bold; color: var(--leaf-green); }
+
+.quantity-control { 
+    display: flex; align-items: center; gap: 8px; 
+    background: var(--bg-light); padding: 8px; border-radius: 25px;
+}
+.qty-input { 
+    width: 50px; border: none; text-align: center; 
+    font-weight: 600; font-size: 1.1rem; background: transparent;
+}
+
+.remove-btn { 
+    width: 44px; height: 44px; border-radius: 50%; 
+    background: var(--bg-light); border: none; color: #999; font-size: 1.2rem;
+    cursor: pointer; transition: all 0.3s; display: flex; align-items: center; justify-content: center;
+    margin-left: 16px;
+}
+.remove-btn:hover { background: #ff4757; color: white; transform: scale(1.1); }
+
+.cart-summary { 
+    background: white; border-radius: 20px; padding: 30px; 
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08); position: sticky; top: 120px;
+}
+
+.summary-list { list-style: none; padding: 0; margin: 0; }
+.summary-list li { 
+    display: flex; justify-content: space-between; 
+    padding: 16px 0; border-bottom: 1px solid #eee;
+}
+.summary-total { 
+    font-size: 1.6rem; font-weight: bold; color: var(--leaf-green); 
+    border-top: 2px solid var(--leaf-green) !important; padding-top: 16px;
+}
+
+.checkout-btn { 
+    width: 100%; padding: 16px; background: linear-gradient(135deg, var(--leaf-green), #90C695);
+    border: none; border-radius: 50px; color: white; font-size: 1.2rem; 
+    font-weight: 600; cursor: pointer; transition: all 0.3s;
+    display: block; text-align: center; margin-top: 20px;
+}
+.checkout-btn:hover { transform: translateY(-2px); box-shadow: 0 15px 35px rgba(107,142,35,0.4); }
